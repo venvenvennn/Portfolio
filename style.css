@@ -45,7 +45,6 @@ html{
     height: 100vh;
     width: 100vw;
     scroll-snap-align: start;
-    scroll-snap-stop: always;
 }
 .name-greet{
     font-weight: 600;
@@ -387,9 +386,7 @@ html{
 #footer{
     bottom: 0;
     padding: 1rem;
-    border-radius: 10px;
-    max-width: 1300px;
-    
+    width: 100vw;
 }
 #footer .social-media{
     font-size: 26px;
@@ -400,10 +397,10 @@ html{
     padding-top: 20px;
 }
 
-.carousel-control-prev{
+#contacts .carousel-control-prev{
     left: -150px;
 }
-.carousel-control-next{
+#contacts .carousel-control-next{
     right: -150px;
 }
 @media only screen and (max-width: 1324px){
@@ -503,6 +500,14 @@ html{
         width: 30px;
     }
 } 
+@media only screen and (max-width: 955px){
+    #contacts .carousel-control-prev{
+        left: 0;
+    }
+    #contacts .carousel-control-next{
+        right: 0;
+    }
+}
 @media only screen and (max-width: 900px){
     #projects .author-name{
         font-size: 50px;
